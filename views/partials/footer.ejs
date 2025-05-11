@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer with Curved Design</title>
+  <script src="https://kit.fontawesome.com/d70dca505b.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    footer {
+      /* background-color: #1a252f; */
+      background-color: rgb(14, 61, 14);
+      opacity: 70%;
+      color: #fff;
+      padding: 50px 0;
+      position: relative;
+      overflow: hidden; /* Hide the overflow for the curve effect */
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      width: 25%;
+      margin-bottom: 30px;
+    }
+
+    .footer-section h3 {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .footer-section a:hover {
+      text-decoration: underline;
+    }
+
+    /* Curved design at the top */
+    /* footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 0 0 50% 50%;
+      transform: translateY(-50%);
+    } */
+    .footer-section ul li i{
+        padding: 4px;
+        margin-right: 10px;
+    }
+    .footer-section ul li:hover{
+        scale: 1.05;
+        transition: all ease-in 0.2s;
+    }
+    
+  </style>
+</head>
+<body>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We'll help you track your reading and choose your next book based on your mood and your favorite topics and themes.
+
+          Simple tracking and insightful stats
+          Easily track and learn about your reading habits with our wide range of charts and graphs.
+          
+          See how your reading develops over time and use that to help you pick better books.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Lost and Found</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Offences and penalties</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <ul>
+          <li><i class="fa-solid fa-phone"></i>888-2-666</li>
+          <li><i class="fa-solid fa-envelope"></i>bookweb@gmail.com</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us on</h3>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
